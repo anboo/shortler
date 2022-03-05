@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_PASSWORD=short
+      - POSTGRES_DB=short
+    ports:
+      - '5432:5432'
